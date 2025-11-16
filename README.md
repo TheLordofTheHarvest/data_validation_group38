@@ -10,6 +10,16 @@ It returns a JSON response indicating whether the CSV is valid and, if not, what
 
 # Communication Contract
 
+## 1. Compatibility
+
+Requires Python 3.13 or higher.
+
+---
+
+## 2. Installing
+
+pip install fastapi
+
 ## 1. How to Request Data from This Microservice
 
 ### Endpoint

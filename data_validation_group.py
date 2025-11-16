@@ -11,7 +11,6 @@ def validate_csv(file, max_size, max_chars, num_columns):
     
     errors = []
     size = len(file)
-    
 
     if size > max_size:    # Check file size
         errors.append(f"File size exceeds the limit of {max_size} bytes.")
