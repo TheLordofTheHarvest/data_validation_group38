@@ -10,17 +10,39 @@ It returns a JSON response indicating whether the CSV is valid and, if not, what
 
 # Communication Contract
 
-## 1. Compatibility
+## 1. Installing
 
-Requires Python 3.13 or higher.
+1. Install Python 3.13 or higher (https://www.python.org/).
+
+2. Navigate to application directory.
+
+3. Create Python virtual environment using "python -m venv .venv" command"
+
+4. Activate virtual environment (platform-specific):
+    On Windows: Use command .\venv\Scripts\activate
+    On macOS and Linux: source venv/bin/activate
+
+5. Install required package "fastapi" using following command: "pip install fastapi"
 
 ---
 
-## 2. Installing
+## 2. Starting the Application
 
-pip install fastapi
+Start the server using:
 
-## 1. How to Request Data from This Microservice
+```bash
+uvicorn data_validation_group:app --reload
+```
+
+The microservice will be available at:
+
+```
+http://127.0.0.1:8000
+```
+
+---
+
+## 3. How to Request Data from This Microservice
 
 ### Endpoint
 ```
@@ -41,7 +63,7 @@ POST /upload_csv/
 
 ---
 
-## 2. Example Request
+## 4. Example Request
 
 ```python
 import requests
@@ -73,26 +95,8 @@ if __name__ == "__main__":
 
 ---
 
-## 3. Sequence Diagram
+## 5. Sequence Diagram
 
 ![alt text](images/seq_diagram.png)
 
 ---
-
-# How to Run the Microservice
-
-Start the server using:
-
-```bash
-uvicorn data_validation_group:app --reload
-```
-
-The microservice will be available at:
-
-```
-http://127.0.0.1:8000
-```
-
----
-
-
