@@ -63,26 +63,9 @@ if __name__ == "__main__":
 
 ---
 
-## 3. Microservice outputs
+## 3. Sequence Diagram
 
-### Successful Validation Response
-```json
-{
-  "valid": true,
-  "message": "CSV is valid"
-}
-```
-
-### Failed Validation Response
-```json
-{
-  "valid": false,
-  "errors": [
-    "Row 3 has 6 columns; expected 5.",
-    "Cell in row 4 column 2 exceeds max character limit."
-  ]
-}
-```
+![alt text](images/seq_diagram.png)
 
 ---
 
